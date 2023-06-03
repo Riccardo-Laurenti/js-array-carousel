@@ -43,9 +43,18 @@ const titleGroup = document.querySelector('.titles');
 
 // Ciclo immagini dinamiche
 for (let i = 0; i < imgs.length; i++) {
-    slider.innerHTML += `<div class="item"><img src="img/${imgs[i]}" alt="Immagine ${i + 1}"></div>`;
-    thumbNail.innerHTML += `<div class="thumbnail shadow" id="${i + 1}"><img src="img/${imgs[i]}" alt="Immagine ${i + 1}"></div>`;
-    titleGroup.innerHTML += `<div class="game-title">${titles[i]}</div>`;
+    slider.innerHTML += 
+        `<div class="item">
+            <img src="img/${imgs[i]}" alt="Immagine ${i + 1}">
+        </div>`;
+    thumbNail.innerHTML += 
+        `<div class="thumbnail shadow" id="${i + 1}">
+            <img src="img/${imgs[i]}" alt="Immagine ${i + 1}">
+        </div>`;
+    titleGroup.innerHTML += 
+        `<div class="game-title">
+            ${titles[i]}
+        </div>`;
 }
 
 // Lista elementi nascosti

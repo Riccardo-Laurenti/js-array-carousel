@@ -103,7 +103,7 @@ img {
 /* Thumbnails */
 
 .thumbnail {
-    height: 4.375rem;
+    height: 4.275rem;
     width: 12.5rem;
     border: .25rem solid #FF8535;
     transform: scale(1.1);
